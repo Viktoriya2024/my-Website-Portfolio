@@ -1,0 +1,33 @@
+:root {
+    --bg-color: #54c9e3;
+    --primary-color: #5f62c4;
+    --secondary-color: #54c9e3;
+    --third-color: #607dce;
+    overflow-y: auto;
+    --color-black: #161616;
+    --color-white: #fff;
+    --size: 170px;
+  }
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+
+  h1 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&display=swap");
+
+  .atkinson-hyperlegible-mono {
+    font-family: "Atkinson Hyperlegible Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Use 400 (regular) or 700 (bold) */
+    font-style: normal;
+  } 
+  p{
+    font-family: "Atkinson Hyperlegible Mono", monospace;
+  }

@@ -1,0 +1,125 @@
+
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 5%;
+    height: 100vh; /* Enough for full screen, no extra */
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Top Blue Line */
+  .hero-top-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #002147;
+    z-index: 10;
+  }
+  
+  /* Background Image (if you have one) */
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    max-width: 600px; /* Prevent text from stretching too wide */
+    font-size: 3rem;
+    text-align: left;
+    position: absolute; /* Fixes position */
+    left: 5%; /* Adjust to move it to the left */
+    top: 50%; /* Centers it vertically */
+    transform: translateY(-50%);
+  }
+  
+  /* Description Text */
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-top: 20px; /* Only if you want spacing below the heading */
+  }
+  
+  /* Cursor (typing effect) */
+  .cursor {
+    display: inline-block;
+    margin-left: 0px;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* Fade-In Keyframe (if used) */
+  @keyframes fadeInLine {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .line {
+    display: block;
+    opacity: 0;
+    animation: fadeInLine 1s ease-out forwards;
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets and smaller devices */
+  @media screen and (max-width: 768px) {
+    .hero-content {
+      font-size: 2rem;
+    }
+    .description {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Mobile devices (under 480px) */
+  @media screen and (max-width: 480px) {
+   
+    .hero-content {
+      font-size: 1.6rem;
+     
+    }
+    .description {
+     font-size: 0.8rem;
+    }
+  }
+  @media screen and (max-width: 390px){
+    .hero-section{
+        margin-bottom: 250px;
+    }
+  }
+  @media screen and (max-height: 720px){
+    .hero-section{
+        margin-bottom: 250px;
+    }
+  }
+  @media screen and (width: 1024px) and (height: 600px){
+    .hero-section{
+        min-height: 150vh;
+        margin-bottom: 0;
+    }
+  }

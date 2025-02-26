@@ -1,0 +1,196 @@
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .projects-section {
+    width: 100%;
+    min-height: auto; /* Full viewport height */
+    background: linear-gradient(135deg, #0a2a88, #4a90e2, #73c2fb);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+  }
+  
+  /* 🌟 Title Styling */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  /* 🏗️ Project Grid */
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two projects per row */
+    gap: 40px; /* Space between cards */
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+  }
+  
+  /* 🎴 Project Card */
+  .project-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+  
+  /* 🎭 Hover Effect: Make Image Bigger */
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 🖼️ Swiper Container */
+  .project-slider {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* 🖼️ Image Styling */
+  .swiper-slide img {
+    width: 100%;
+    height: 300px; /* Adjust height */
+    object-fit: cover; /* Crops images nicely */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover .swiper-slide img {
+    transform: scale(1.1); /* Zoom in on hover */
+  }
+  
+  /* 📄 Project Content */
+  .project-content {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .project-content h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .project-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* 🔗 Buttons */
+  .project-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn-demo {
+    background-color: #0e74e9;
+    color: white;
+  }
+  
+  .btn-demo:hover {
+    background-color: #0c5fbf;
+  }
+  
+  /* 📱 Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* Show one project per row */
+        gap: 20px; /* Reduce gap to fit smaller screens */
+    }
+    
+    .projects-section {
+        padding: 40px 20px; /* Adjust padding to avoid overlap */
+    }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+      padding-top: 80px; /* Extra padding to push content down */
+  }
+
+  .section-title {
+      font-size: 2rem; /* Reduce title size */
+  }
+
+  .project-card {
+      padding: 15px;
+  }
+
+  .swiper-slide img {
+      height: 250px; /* Adjust height for better scaling */
+  }
+}
+@media (max-width: 540px){
+  .projects-section {
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    margin-top: 250px;
+  }
+
+  .section-title {
+      font-size: 1.8rem;
+  }
+
+  .project-card {
+      padding: 10px;
+  }
+
+  .swiper-slide img {
+      height: 200px; /* Further reduce image height */
+  }
+}
+@media (max-width: 480px){
+  .projects-section {
+    margin-top: 200px;
+  }
+}
+@media (max-width: 390px){
+  .projects-section {
+    margin-top: 350px;
+  }
+}
+@media (max-width: 375px){
+  .projects-section {
+    margin-top: 400px;
+  }
+}
+@media screen and (width: 1024px) and (height: 600px){
+  .projects-section {
+    margin-top: 60px;
+  }
+}
