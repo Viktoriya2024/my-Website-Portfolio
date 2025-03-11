@@ -28,7 +28,7 @@ const projects = [
     images: [design1, design2],
     description: "A modern e-commerce platform for a design studio.",
     demoLink: "viktoriya2024.github.io/Design-shop/",
-    githubLink: "https://github.com/Viktoriya2024/Design-shop",
+    githubLink: "viktoriya2024.github.io/Design-shop/",
   },
   {
     title: "Tattoo Platform",
