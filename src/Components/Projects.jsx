@@ -7,8 +7,8 @@ import "swiper/css/pagination";
 import "./styles/Projects.css";
 
 // Import images
-import design1 from "../assets/images/design1.png";
-import design2 from "../assets/images/design2.png";
+/* import design1 from "../assets/images/design1.png";
+import design2 from "../assets/images/design2.png"; */
 import tattoo1 from "../assets/images/tatoo1.png";
 import tattoo2 from "../assets/images/tattoo2.png";
 import tattoo3 from "../assets/images/tatto3.png";
@@ -23,12 +23,12 @@ import fuji3 from "../assets/images/fuji3.png";
 import fuji4 from "../assets/images/fuji4.png";
 
 const projects = [
-  {
+  /*  {
     title: "Design Studio (E-Commerce)",
     images: [design1, design2],
     description: "A modern e-commerce platform for a design studio.",
     demoLink: "https://viktoriya2024.github.io/Design-shop/",
-  },
+  }, */
   {
     title: "Tattoo Platform",
     images: [tattoo1, tattoo2, tattoo3, tattoo4, tattoo5, tattoo6],
