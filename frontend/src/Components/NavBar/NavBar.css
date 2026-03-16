@@ -1,0 +1,94 @@
+.navbar {
+  background-color: #fff;
+}
+
+
+.navbar .nav-link {
+  color: white; 
+  font-weight: bold;
+  font-size: 18px;
+
+  transition: color 0.3s ease-in-out;
+}
+.navbar .navbar-nav .nav-link {
+  position: relative;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; 
+  width: 100%;
+  height: 2px;
+  background-color: #54c9e3; 
+  transform: scaleX(0); 
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+  transform: scaleX(1); 
+  transform-origin: left;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #54c9e3; 
+}
+
+/* .hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; 
+  left: 0;
+  width: 100%;
+  height: 50px;
+  
+    background: white;
+  border-radius: 150% 150% 0 0; 
+} */
+
+
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Keeps it behind content */
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1; /* Above background but below content */
+}
+

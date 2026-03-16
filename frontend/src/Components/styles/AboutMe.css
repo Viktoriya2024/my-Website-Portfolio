@@ -1,0 +1,115 @@
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    padding: 40px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    background: rgb(9, 38, 71); /* Semi-Transparent Dark Blue */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Separates image and text */
+    gap: 40px; /* Space between image and text */
+  }
+  .about-image {
+    flex: 0 0 30%; /* Fixed width, so image takes 30% of the space */
+  }
+
+  .about-image img {
+    width: 100%; /* Adjust image size */
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%; /* Makes image circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .about-text {
+    flex: 1; /* Takes remaining space */
+    text-align: left;
+  }
+  .about-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  .about-section {
+    background-image: url("../assets/images/about-bg.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0; /* Adds spacing around content */
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers text horizontally */
+    text-align: center;
+  }
+  .about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 4, 236, 0.6); /* Dark Blue Transparent Overlay */
+    z-index: 0;
+  }
+ 
+  .about-container p:nth-of-type(1) {
+    animation-delay: 0.5s;
+  }
+  .about-container p:nth-of-type(2) {
+    animation-delay: 1s;
+  }
+  .about-container p:nth-of-type(3) {
+    animation-delay: 1.5s;
+  }
+  .about-container p:nth-of-type(4) {
+    animation-delay: 2s;
+  }
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image {
+      flex: 0 0 auto;
+    }
+  
+    .about-image img {
+      width: 200px;
+    }
+  
+    .about-text {
+      text-align: center;
+    }
+  }
+  @media (max-width: 480px) {
+    .about-text{
+      font-size: 0.8rem;
+    }
+  }
